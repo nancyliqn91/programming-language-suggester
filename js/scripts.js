@@ -1,4 +1,8 @@
 // Business Logic
+const python = "You should study Python. Python is easy to learn,versatile, and growing in popularity.";
+const javaScript = " You should study JavaScript. JS is used for web development, easy to integrate with HTML and CSS. Also, it's widely used.";
+const java = "You shuld study Java. Java is object-oriented, platform-indepedent, and used in enterprise applications.";
+const random = "Just pick the language you're interested. All of the above languages are popular programming languages used for a wide range of applications.";
 
 // User Interface Logic
 function handleChoice(event) {
@@ -13,14 +17,14 @@ function handleChoice(event) {
   // For result
   let result;
   if (answer2 === "yes" ||answer3 ==="yes") {
-    result = "you should study Python";
+    result = python;
   } else if (answer4 === "yes" ||answer5 ==="yes") {
-    result = " you should study JavaScript";
+    result = javaScript;
   } else if (answer2 === "no" ||answer4 === "no") {
-    result = "you shuld study Java";
+    result = java;
   } else if (answer3 === "no" ||answer5 === "no") {
-    result = "just pick the language you're interested.";
-  } else { result = "plese answer questions by type yes or no."
+    result = random;
+  } else { result = "Plese answer at least one question by type yes or no."
   }
 
   document.getElementById("output").innerText = name +" "+ result;

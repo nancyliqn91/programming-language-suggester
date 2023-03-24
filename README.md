@@ -1,4 +1,4 @@
-# programming-portfolio
+# rogramming-language-suggester
 
 #### By _Qian Li_ 😊
 
@@ -8,6 +8,7 @@
 
 * HTML
 * CSS
+* JavaScript
 * VS code
 
 ## Description
