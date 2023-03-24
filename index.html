@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Calculator</title>
+  <title>Programming Language Suggester</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 <body>
-  <h1>Calculator</h1>
-  <form id="calculator">
-    <label for="input1">1st number:</label>
-    <input id="input1" type="text">
+  <!-- Introduction part -->
+  <h1>Welcome to Programming Language Suggester!</h1>
+  <p>Notice: even though all languages have similarities and switching between languages and platforms is very common in both internships and jobs, learners should still put some thought into which language they should learn. Let's get started!</p>
+  <!-- For language choice -->
+  <form id="suggester">
+    <label for="pet-select">Choose a language:</label>
     <br>
-    <label for="input2">2nd number:</label>
-    <input id="input2" type="text">
+    <select name="languages" id="language-select">
+      <option value="">--Please choose an language you're interested--</option>
+      <option value="1">Python</option>
+      <option value="2">JavaScript</option>
+      <option value="3">Java</option>
+    </select>
     <br>
-
+    <!-- For question -->
+    <p>Please answer questions below to continue!</p>
     <label>
       <input type="radio" name="operator" value="add">
       add
@@ -31,11 +38,12 @@
       <input type="radio" name="operator" value="divide">
       divide
     </label>
-
-    <button type="submit" class="btn">Go!</button>
+    <!-- For submission -->
+    <button type="submit" class="btn">Submit!</button>
   </form>
 
-  <h2>Results</h2>
+  <h2>Let's see the choice for you.</h2>
   <p id="output"></p>
+
 </body>
 </html>
