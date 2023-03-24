@@ -3,6 +3,7 @@
 // User Interface Logic
 function handleChoice(event) {
   // For input
+  conclusion.removeAttribute("class");
   event.preventDefault();
   const name = document.getElementById("name").value;
   const answer2 = document.getElementById("input2").value;
@@ -25,15 +26,17 @@ function handleChoice(event) {
   document.getElementById("output").innerText = name +" "+ result;
 }
  
-
- // For reset
-
 window.addEventListener("load", function() {
   const form = document.getElementById("suggester");
   let resetBtn = document.getElementById("reset");
+  let conclusion = document.getElementById("conclusion");
   form.addEventListener("submit", handleChoice);
+  // For reset
+  form.addEventListener("submit", function() {
+    resetBtn.removeAttribute("class");
+  }); 
   resetBtn.addEventListener("click", function() {
-    // story.setAttribute("class", "hidden");
+    conclusion.setAttribute("class", "hidden");
     document.getElementById("name").value = null;
     document.getElementById("input2").value = null;
     document.getElementById("input3").value = null;
