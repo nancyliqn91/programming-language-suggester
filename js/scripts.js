@@ -1,42 +1,40 @@
 // Business Logic
-function add(num1, num2) {
-  return num1 + num2;
-}
-
-function subtract(num1, num2) {
-  return num1 - num2;
-}
-
-function multiply(num1, num2) {
-  return num1 * num2;
-}
-
-function divide(num1, num2) {
-  return num1 / num2;
-}
 
 // User Interface Logic
-function handleCalculation(event) {
+function handleChoice(event) {
+  // For input
   event.preventDefault();
-  const number1 = parseInt(document.querySelector("input#input1").value);
-  const number2 = parseInt(document.querySelector("input#input2").value);
-  const operator = document.querySelector("input[name='operator']:checked").value;
-
+  const name = document.getElementById("input1").value;
+  const answer2 = document.getElementById("input2").value;
+  const answer3 = document.getElementById("input3").value;
+  const answer4 = document.getElementById("input4").value;
+  const answer5 = document.getElementById("input5").value;
+  // For result
   let result;
-  if (operator === "add") {
-    result = ad(number1, number2);
-  } else if (operator === "subtract") {
-    result = subtract(number1, number2);
-  } else if (operator === "multiply") {
-    result = multiply(number1, number2);
-  } else if (operator === "divide") {
-    result = divide(number1, number2);
+  if (answer2 === "yes" ||answer3 ==="yes") {
+    result = "Python";
+  } else if (answer4 === "yes" ||answer5 ==="yes") {
+    result = "JavaScript";
+  } else if (answer2 === "no" ||answer4 === "no") {
+    result = "Java";
+  } else if (answer3 === "no" ||answer5 === "no") {
+    result = "Just pick the language you're interested.";
+  } else {
+    return "Plese answer questions by type yes or no."
   }
 
-  document.getElementById("output").innerText = result;
+  document.getElementById("output").innerText = name +", you shold study " + result;
 }
-
+ // For reset
+ let resetBtn = document.getElementById("reset");
+ resetBtn.addEventListener("click", function() {
+  // story.setAttribute("class", "hidden");
+  document.getElementById("input2").value = null;
+  document.getElementById("input3").value = null;
+  document.getElementById("input4").value = null;
+  document.getElementById("input5").value = null;
+});
 window.addEventListener("load", function() {
-  const form = document.getElementById("calculator");
-  form.addEventListener("submit", handleCalculation);
+  const form = document.getElementById("suggester");
+  form.addEventListener("submit", handleChoice);
 });

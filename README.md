@@ -2,7 +2,7 @@
 
 #### By _Qian Li_ 😊
 
-#### This first project demonstrate uses of Git, HTML, and CSS. It will act as the landing page for my programming portfolio later.
+#### This is my second project which demonstrate uses of Web API object properties and methods, event handler properties and event listeners, and CSS. 
 
 ## Technologies Used
 
@@ -12,12 +12,12 @@
 
 ## Description
 
-It contains my background information, skill set, and project list.
+It will serve as the programming language suggester page for learner.
 
 ## Setup/Installation Requirements
 
 * Clone the project from Github to the local desktop.
-* Open the project folder(programming-portfolio).
+* Open the project folder(programming-language-suggester).
 * Open the index.html on the Chrome broswer.
 
 ## Known Bugs

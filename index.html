@@ -11,37 +11,41 @@
   <p>Notice: even though all languages have similarities and switching between languages and platforms is very common in both internships and jobs, learners should still put some thought into which language they should learn. Let's get started!</p>
   <!-- For language choice -->
   <form id="suggester">
-    <label for="pet-select">Choose a language:</label>
+    <label for="language-select">Choose a language:</label>
     <br>
     <select name="languages" id="language-select">
       <option value="">--Please choose an language you're interested--</option>
       <option value="1">Python</option>
       <option value="2">JavaScript</option>
       <option value="3">Java</option>
+      <option value="4">C#</option>
+      <option value="5">Ruby</option>
     </select>
     <br>
     <!-- For question -->
-    <p>Please answer questions below to continue!</p>
-    <label>
-      <input type="radio" name="operator" value="add">
-      add
+    <p>Please answer questions below to continue! Just type <b id = "blue">yes</b> or <b id = "blue">no</b> to answer. </p>
+    <label for="name">Q1: Your name here</label>
+    <input id="name" type="text" name="name">
+    <br>
+    <label for="input2">Q2: Do you like math?</label>
+    <input id="input2" type="text" name="input2">
+    <br>
+    <label for="input3">Q3: Do you want to be a data scientist?</label>
+    <input id="input3" type="text" name="input3">
+    <br>
+    <label for="input4">Q4: Do you like art design?</label>
+    <input id="input4" type="text" name="input4">
+    <br>
+    <label for="input5">Q5: Do you want to be a software programmer?</label>
+    <input id="input5" type="text" name="input5">
     </label>
-    <label>
-      <input type="radio" name="operator" value="subtract">
-      subtract
-    </label>
-    <label>
-      <input type="radio" name="operator" value="multiply">
-      multiply
-    </label>
-    <label>
-      <input type="radio" name="operator" value="divide">
-      divide
-    </label>
+    <br>
     <!-- For submission -->
-    <button type="submit" class="btn">Submit!</button>
+    <button type="submit" class="btn">Submit</button>
   </form>
 
+  <br>
+  <button type="button" class="hidden" id="reset">Reset</button>
   <h2>Let's see the choice for you.</h2>
   <p id="output"></p>
 
