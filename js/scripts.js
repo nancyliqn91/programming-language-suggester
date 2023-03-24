@@ -15,11 +15,15 @@ function handleChoice(event) {
   const answer4 = document.getElementById("input4").value;
   const answer5 = document.getElementById("input5").value;
   // For input of multiple choice
-  const interest1 = document.getElementById("coding").value;
-  const interest2 = document.getElementById("calculation").value;
-  const interest3 = document.getElementById("color").value;
-  const interest4 = document.getElementById("book").value;
-  const interest5 = document.getElementById("art").value;
+  const int1 = parseInt(document.getElementById("coding").value);
+  const int2 = parseInt(document.getElementById("calculation").value);
+  const int3 = parseInt(document.getElementById("color").value);
+  const int4 = parseInt(document.getElementById("book").value);
+  const int5 = parseInt(document.getElementById("bot").value);
+  const int6 = parseInt(document.getElementById("art").value);
+  const a = int1 + int2 +int3;
+  const b = int4 +int5;
+  const c = int6;
 
   // For result
   let result;
@@ -35,7 +39,7 @@ function handleChoice(event) {
   }
 // For multiple choice
 let interests;
-  if (answer2 === "yes" ||answer3 ==="yes") {
+  if (a> b) {
     interests = python;
   } else if (answer4 === "yes" ||answer5 ==="yes") {
     interests = javaScript;
