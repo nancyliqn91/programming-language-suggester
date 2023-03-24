@@ -1,4 +1,4 @@
-# rogramming-language-suggester
+# programming-language-suggester
 
 #### By _Qian Li_ 😊
 
