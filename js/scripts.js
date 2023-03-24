@@ -6,7 +6,7 @@ const random = "Just pick the language you're interested. All of the above langu
 
 // User Interface Logic
 function handleChoice(event) {
-  // For input
+  // For input of question
   conclusion.removeAttribute("class");
   event.preventDefault();
   const name = document.getElementById("name").value;
@@ -14,6 +14,13 @@ function handleChoice(event) {
   const answer3 = document.getElementById("input3").value;
   const answer4 = document.getElementById("input4").value;
   const answer5 = document.getElementById("input5").value;
+  // For input of multiple choice
+  const interest1 = document.getElementById("coding").value;
+  const interest2 = document.getElementById("calculation").value;
+  const interest3 = document.getElementById("color").value;
+  const interest4 = document.getElementById("book").value;
+  const interest5 = document.getElementById("art").value;
+
   // For result
   let result;
   if (answer2 === "yes" ||answer3 ==="yes") {
@@ -24,6 +31,18 @@ function handleChoice(event) {
     result = java;
   } else if (answer3 === "no" ||answer5 === "no") {
     result = random;
+  } else { result = "Plese answer at least one question by type yes or no."
+  }
+// For multiple choice
+let interests;
+  if (answer2 === "yes" ||answer3 ==="yes") {
+    interests = python;
+  } else if (answer4 === "yes" ||answer5 ==="yes") {
+    interests = javaScript;
+  } else if (answer2 === "no" ||answer4 === "no") {
+    interests = java;
+  } else if (answer3 === "no" ||answer5 === "no") {
+    interests = random;
   } else { result = "Plese answer at least one question by type yes or no."
   }
 
