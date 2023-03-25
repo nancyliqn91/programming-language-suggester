@@ -10,7 +10,7 @@
   <h1>Welcome to Programming Language Suggester!</h1>
   <p>Notice: even though all languages have similarities and switching between languages and platforms is very common in both internships and jobs, learners should still put some thought into which language they should learn. Let's get started!</p>
   <!-- For language choice -->
-  <form id="suggester">
+  <form id="suggester1">
     <label for="language-select">Choose a language:</label>
     <br>
     <select name="languages" id="language-select">
@@ -22,7 +22,7 @@
       <option value="5">Ruby</option>
     </select>
     <br>
-    <!-- For question -->
+    <!-- For question section -->
     <p>1. Please answer questions below to continue! Just type <b id = "blue">yes</b> or <b id = "blue">no</b> to answer. </p>
     <label for="name">Q1: Your name here</label>
     <input id="name" type="text" name="name">
@@ -43,8 +43,16 @@
     <!-- For submission -->
     <button type="submit" class="btn">Submit</button>
     <br>
+  </form>
+  <br>
+  <button type="button" class="hidden" id="reset1">Reset</button>
+  <div id="conclusion1" class="hidden">
+    <h3>Let's see the choice for you. Just for reference.</h1>
+    <p id="output1"></p>
+  </div>
 
-    <!-- For multiple choice -->
+  <form id="suggester2">
+    <!-- For interests section -->
     <legend>2. If you want to choose programming language from your interests:</legend>
     <div>
       <input type="checkbox" id="coding" name="interest" value="coding" />
@@ -72,13 +80,6 @@
     </div>
     <button type="submit">Submit</button>
   </form>
-
-  <br>
-  <button type="button" class="hidden" id="reset1">Reset</button>
-  <div id="conclusion1" class="hidden">
-    <h3>Let's see the choice for you. Just for reference.</h1>
-    <p id="output1"></p>
-  </div>
   <br>
   <button type="button" class="hidden" id="reset2">Reset</button>
   <div id="conclusion2" class="hidden">
