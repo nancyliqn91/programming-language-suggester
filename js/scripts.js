@@ -46,6 +46,7 @@ window.addEventListener("load", function() {
     resetBtn1.removeAttribute("class");
   }); 
   resetBtn1.addEventListener("click", function() {
+    let conclusion1 = document.getElementById("conclusion1");
     conclusion1.setAttribute("class", "hidden");
     document.getElementById("name").value = null;
     document.getElementById("input2").value = null;
