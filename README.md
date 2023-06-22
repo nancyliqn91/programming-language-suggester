@@ -2,7 +2,7 @@
 
 #### By _Qian Li_ 😊
 
-#### This is my second project which demonstrate uses of Web API object properties and methods, event handler properties and event listeners, and CSS. 
+#### This is my second project which demonstrate uses of Web object properties and methods, event handler properties and event listeners, and CSS. 
 
 ## Technologies Used
 
